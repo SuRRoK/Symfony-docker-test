@@ -17,7 +17,6 @@ class PostType extends AbstractType
             ->add('content')
             ->add('categoryId')
             ->add('subcategoryId')
-            ->add('isDeleted')
         ;
     }
 

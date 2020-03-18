@@ -15,7 +15,6 @@ class SubcategoryType extends AbstractType
             ->add('name')
             ->add('description')
             ->add('categoryId')
-            ->add('isDeleted')
         ;
     }
 
