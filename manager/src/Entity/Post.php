@@ -46,6 +46,11 @@ class Post
      */
     private $isDeleted;
 
+    /**
+     * @ORM\Column(type="boolean")
+     */
+    private $isPublish;
+
     public function getId(): ?int
     {
         return $this->id;
@@ -119,6 +124,18 @@ class Post
     public function setIsDeleted(bool $isDeleted): self
     {
         $this->isDeleted = $isDeleted;
+
+        return $this;
+    }
+
+    public function getIsPublish(): ?bool
+    {
+        return $this->isPublish;
+    }
+
+    public function setIsPublish(bool $isPublish): self
+    {
+        $this->isPublish = $isPublish;
 
         return $this;
     }
