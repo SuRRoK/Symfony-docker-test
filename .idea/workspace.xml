@@ -2,29 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e0e3ee78-2548-4048-95ad-823907e15b5c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/manager/public/css/bootstrap.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manager/public/css/style-old.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manager/public/css/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manager/public/js/bootstrap.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manager/public/js/jquery-3.2.1.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manager/public/js/jquery.validate.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manager/public/js/popper.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manager/public/js/showContent.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manager/public/js/subcategories.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/src/Traits/FindNotDeleted.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/config/packages/twig.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/manager/config/packages/twig.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/config/packages/security.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/manager/config/packages/security.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/manager/src/Controller/CategoryController.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/src/Controller/CategoryController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/src/Form/CategoryType.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/src/Form/CategoryType.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/src/Controller/PostController.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/src/Controller/PostController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/src/Controller/SubcategoryController.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/src/Controller/SubcategoryController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/src/Entity/Category.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/src/Entity/Category.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/src/Entity/Post.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/src/Entity/Post.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/src/Entity/Subcategory.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/src/Entity/Subcategory.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/src/Entity/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/src/Entity/User.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/manager/src/Form/PostType.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/src/Form/PostType.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/src/Form/SubcategoryType.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/src/Form/SubcategoryType.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/manager/templates/base.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/templates/category/_form.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/manager/templates/category/_form.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/templates/category/edit.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/manager/templates/category/edit.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/templates/category/new.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/manager/templates/category/new.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/templates/post/edit.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/manager/templates/post/edit.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/templates/post/new.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/manager/templates/post/new.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/templates/subcategory/edit.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/manager/templates/subcategory/edit.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/templates/subcategory/new.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/manager/templates/subcategory/new.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/src/Repository/CategoryRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/src/Repository/CategoryRepository.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/src/Repository/PostRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/src/Repository/PostRepository.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -185,7 +175,8 @@
       <workItem from="1584439434575" duration="133000" />
       <workItem from="1584439824157" duration="7469000" />
       <workItem from="1584513194995" duration="4700000" />
-      <workItem from="1584551046851" duration="3226000" />
+      <workItem from="1584551046851" duration="8588000" />
+      <workItem from="1584592919516" duration="4885000" />
     </task>
     <servers />
   </component>
@@ -193,14 +184,54 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="677" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1584601392767">
+      <screen x="0" y="0" width="1920" height="1035" />
+    </state>
+    <state x="677" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1035/1920.0.1280.1024@0.0.1920.1035" timestamp="1584601392767" />
+    <state x="698" y="276" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1584602520758">
+      <screen x="0" y="0" width="1920" height="1035" />
+    </state>
+    <state x="698" y="276" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1035/1920.0.1280.1024@0.0.1920.1035" timestamp="1584602520758" />
     <state x="583" y="185" key="FileChooserDialogImpl" timestamp="1584446128328">
       <screen x="0" y="0" width="1600" height="855" />
     </state>
     <state x="583" y="185" key="FileChooserDialogImpl/0.0.1600.855@0.0.1600.855" timestamp="1584446128328" />
+    <state width="1872" height="335" key="GridCell.Tab.0.bottom" timestamp="1584602370630">
+      <screen x="0" y="0" width="1920" height="1035" />
+    </state>
+    <state width="1872" height="335" key="GridCell.Tab.0.bottom/0.0.1920.1035/1920.0.1280.1024@0.0.1920.1035" timestamp="1584602370630" />
+    <state width="1872" height="335" key="GridCell.Tab.0.center" timestamp="1584602370629">
+      <screen x="0" y="0" width="1920" height="1035" />
+    </state>
+    <state width="1872" height="335" key="GridCell.Tab.0.center/0.0.1920.1035/1920.0.1280.1024@0.0.1920.1035" timestamp="1584602370629" />
+    <state width="1872" height="335" key="GridCell.Tab.0.left" timestamp="1584602370629">
+      <screen x="0" y="0" width="1920" height="1035" />
+    </state>
+    <state width="1872" height="335" key="GridCell.Tab.0.left/0.0.1920.1035/1920.0.1280.1024@0.0.1920.1035" timestamp="1584602370629" />
+    <state width="1872" height="335" key="GridCell.Tab.0.right" timestamp="1584602370630">
+      <screen x="0" y="0" width="1920" height="1035" />
+    </state>
+    <state width="1872" height="335" key="GridCell.Tab.0.right/0.0.1920.1035/1920.0.1280.1024@0.0.1920.1035" timestamp="1584602370630" />
+    <state x="613" y="326" key="NewPhpClassDialog" timestamp="1584600709804">
+      <screen x="0" y="0" width="1920" height="1035" />
+    </state>
+    <state x="613" y="326" key="NewPhpClassDialog/0.0.1920.1035/1920.0.1280.1024@0.0.1920.1035" timestamp="1584600709804" />
+    <state x="762" y="441" key="NewPhpFileDialog" timestamp="1584600381056">
+      <screen x="0" y="0" width="1920" height="1035" />
+    </state>
+    <state x="762" y="441" key="NewPhpFileDialog/0.0.1920.1035/1920.0.1280.1024@0.0.1920.1035" timestamp="1584600381056" />
     <state x="347" y="75" key="SettingsEditor" timestamp="1584551626699">
       <screen x="0" y="0" width="1920" height="1035" />
     </state>
     <state x="289" y="62" key="SettingsEditor/0.0.1600.855@0.0.1600.855" timestamp="1584446186763" />
     <state x="347" y="75" key="SettingsEditor/0.0.1920.1035/1920.0.1280.1024@0.0.1920.1035" timestamp="1584551626699" />
+    <state x="624" y="164" width="672" height="676" key="search.everywhere.popup" timestamp="1584558333258">
+      <screen x="0" y="0" width="1920" height="1035" />
+    </state>
+    <state x="624" y="164" width="672" height="676" key="search.everywhere.popup/0.0.1920.1035/1920.0.1280.1024@0.0.1920.1035" timestamp="1584558333258" />
+    <state x="690" y="431" key="vcs.readOnlyHandler.ReadOnlyStatusDialog" timestamp="1584557657388">
+      <screen x="0" y="0" width="1920" height="1035" />
+    </state>
+    <state x="690" y="431" key="vcs.readOnlyHandler.ReadOnlyStatusDialog/0.0.1920.1035/1920.0.1280.1024@0.0.1920.1035" timestamp="1584557657388" />
   </component>
 </project>

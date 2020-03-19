@@ -20,7 +20,7 @@ class CategoryController extends AbstractController
      */
     public function index(CategoryRepository $categoryRepository): Response
     {
-        $categories = $categoryRepository->findAll();
+        $categories = $categoryRepository->findNotDeleted(false);
 
         return $this->render('category/index.html.twig', [
             'categories' => $categories,
@@ -87,7 +87,8 @@ class CategoryController extends AbstractController
     {
         if ($this->isCsrfTokenValid('delete'.$category->getId(), $request->request->get('_token'))) {
             $entityManager = $this->getDoctrine()->getManager();
-            $entityManager->remove($category);
+            $category->setIsDeleted(true);
+//            $entityManager->remove($category);
             $entityManager->flush();
         }
 

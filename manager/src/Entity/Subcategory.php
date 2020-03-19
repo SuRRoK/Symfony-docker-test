@@ -34,7 +34,7 @@ class Subcategory
     /**
      * @ORM\Column(type="boolean")
      */
-    private $isDeleted;
+    private $isDeleted = false;
 
     public function getId(): ?int
     {

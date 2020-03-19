@@ -44,12 +44,12 @@ class Post
     /**
      * @ORM\Column(type="boolean")
      */
-    private $isDeleted;
+    private $isDeleted = false;
 
     /**
      * @ORM\Column(type="boolean")
      */
-    private $isPublish;
+    private $isPublish = false;
 
     public function getId(): ?int
     {

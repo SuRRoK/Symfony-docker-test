@@ -85,7 +85,8 @@ class SubcategoryController extends AbstractController
     {
         if ($this->isCsrfTokenValid('delete'.$subcategory->getId(), $request->request->get('_token'))) {
             $entityManager = $this->getDoctrine()->getManager();
-            $entityManager->remove($subcategory);
+            $subcategory->setIsDeleted(true);
+//            $entityManager->remove($subcategory);
             $entityManager->flush();
         }
 

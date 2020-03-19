@@ -38,7 +38,6 @@ class PostController extends AbstractController
             $entityManager = $this->getDoctrine()->getManager();
             dump($entityManager);
             $entityManager->persist($post);
-            dd($entityManager);
             $entityManager->flush();
 
             return $this->redirectToRoute('post_index');
@@ -87,7 +86,8 @@ class PostController extends AbstractController
     {
         if ($this->isCsrfTokenValid('delete'.$post->getId(), $request->request->get('_token'))) {
             $entityManager = $this->getDoctrine()->getManager();
-            $entityManager->remove($post);
+            $post->setIsDeleted(true);
+//            $entityManager->remove($post);
             $entityManager->flush();
         }
 
